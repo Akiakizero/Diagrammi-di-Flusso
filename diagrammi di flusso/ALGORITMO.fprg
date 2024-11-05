@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ALGORITMO"/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-15 09:39:24 "/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtGVVJCSUZZLTVWOVNSMEg7MjAyNC0xMC0xNTsiMDk6MTY6NDkgIjszNjM3"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtGVVJCSUZZLTVWOVNSMEg7MjAyNC0xMC0xNTsiMDk6Mzk6MjQgIjszOzM3NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, A" type="Real" array="False" size=""/>
+            <output expression="&quot;ciao dammi il lato del quadrato&quot;" newline="True"/>
+            <input variable="I"/>
+            <while expression="L=0">
+                <output expression="&quot;DAMMI UN VALORE POSITIVO!&quot;" newline="True"/>
+            </while>
+            <output expression="&quot;TROVO L'AREA DEL QUADRATO&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

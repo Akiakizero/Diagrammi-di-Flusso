@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CALCOLATORE AREE"/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-15 09:52:41 "/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtGVVJCSUZZLTVWOVNSMEg7MjAyNC0xMC0xNTsiMDk6NDE6MDQgIjszNjI2"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtGVVJCSUZZLTVWOVNSMEg7MjAyNC0xMC0xNTsiMDk6NTI6NDEgIjsxOzM3Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L, A, B, H" type="Real" array="False" size=""/>
+            <declare name="SCELTA" type="String" array="False" size=""/>
+            <output expression="&quot;SCEGLI Q PER IL QUADRATO E T PER IL TRINGOLO&quot;" newline="True"/>
+            <if expression="SCELTA==&quot;Q&quot;">
+                <then>
+                    <output expression="&quot;CIAO DAMMI IL LATO DEL QUADRATO&quot;" newline="True"/>
+                    <input variable="L"/>
+                    <output expression="&quot;L'AREA &#232;&quot;" newline="True"/>
+                    <assign variable="A" expression="L^2"/>
+                    <output expression="A" newline="True"/>
+                </then>
+                <else>
+                    <if expression="SCELTA==&quot;T&quot;">
+                        <then>
+                            <output expression="&quot;CIAO DAMMI LA BASE DEL TRINGOLO&quot;" newline="True"/>
+                            <input variable="B"/>
+                            <output expression="&quot;CIAO DAMMI L'ALTEZZA DEL TRIANGOLO&quot;" newline="True"/>
+                            <input variable="H"/>
+                            <output expression="&quot;L'AREA &#232;&quot;" newline="True"/>
+                            <assign variable="A" expression="B*H/2"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;VA VIA&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

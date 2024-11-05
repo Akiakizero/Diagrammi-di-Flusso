@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calcolatore di aree"/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-17 11:35:12 "/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtGVVJCSUZZLTVWOVNSMEg7MjAyNC0xMC0xNzsiMTE6MDg6MDggIjszNjI4"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtGVVJCSUZZLTVWOVNSMEg7MjAyNC0xMC0xNzsiMTE6MzU6MTIgIjsyOzM3MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l, b, h, A" type="Real" array="False" size=""/>
+            <declare name="scelta" type="String" array="False" size=""/>
+            <output expression="&quot;ciao sono un calcolatore di aree, digita q per il quadrato t per il triangolo&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta==&quot;q&quot;">
+                <then>
+                    <output expression="&quot;ciao, calcolol'area del quadrato, dammi il lato!&quot;" newline="True"/>
+                    <input variable="l"/>
+                    <assign variable="A" expression="l^2"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;t&quot;">
+                        <then>
+                            <output expression="&quot;ciao, calcolol'area del quadrato, dammi la base!&quot;" newline="True"/>
+                            <input variable="b"/>
+                            <output expression="&quot;dammi l'altezza&quot;" newline="True"/>
+                            <input variable="h"/>
+                            <assign variable="A" expression="l^2"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;scemo era o q o t&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;l'area della figura &#232;&quot;" newline="True"/>
+            <output expression="A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
